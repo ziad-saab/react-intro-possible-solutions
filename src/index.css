@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.red-box {
+    border: 5px dashed red;
+    padding: 1em;
+}
