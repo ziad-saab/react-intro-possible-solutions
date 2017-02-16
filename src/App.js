@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
 import ImageCaption from './ImageCaption';
 import RedBox from './RedBox';
 import GuessTheNumber from './GuessTheNumber';
 import YouClicked from './YouClicked';
+import CharacterCounter from './CharacterCounter';
+import GuessStateful from './GuessStateful';
 
 class App extends Component {
     constructor() {
@@ -62,6 +64,12 @@ class App extends Component {
                 <GuessTheNumber numberToGuess={42}/>
 
                 <YouClicked />
+
+                <CharacterCounter limit={8} />
+
+                <div style={{padding: 30}}>
+                    <GuessStateful />
+                </div>
             </div>
         )
     }
